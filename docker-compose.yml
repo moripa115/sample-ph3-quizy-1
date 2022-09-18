@@ -2,8 +2,7 @@ version: "3"
 
 services:
   db:
-    build:
-      context: ./infra/docker/mysql
+    image: mysql
     environment:
       - MYSQL_DATABASE=laravel
       - MYSQL_USER=laravel
